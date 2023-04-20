@@ -1,0 +1,75 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    color: #28282d;
+}
+
+
+/* Navigering */
+.nav, li {
+    font-weight: bold;
+    font-size: 20px;
+    display: inline-block;
+    position: relative;
+    list-style: none;
+    padding: 12px 60px;
+}
+
+nav {
+    border-bottom: 2px solid #d6d6e0;
+}
+
+
+/* Nav hover */
+nav ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #28282d;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+nav ul li:hover::after {
+    width: 100%;
+}
+
+
+
+/* Logga */
+.header, img {
+    display: block;
+    margin-top: 20px;
+    height: 70px;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.intro {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)), url("../img/bakgrund.jpg");
+    padding: 15%;
+    padding-bottom: 20%;
+    margin: 5%;
+
+}
+
+h1 {
+    color: aliceblue;
+    font-weight: 700;
+    size: 20px;
+}
+
+.liten {
+    width: 400px;
+    height: 150px;
+}
+
+.stor {
+    width: 400px;
+    height: 300px;
+}
