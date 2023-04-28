@@ -1,6 +1,9 @@
-.galleri {
+.sales {
     display: grid;
-    grid-template-columns: 4;
-    grid-template-rows: 4;
+    grid-template-columns: auto auto auto;
+    grid-row: auto;
+    justify-content: center;
 }
+
+
 
