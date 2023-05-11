@@ -6,21 +6,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>125a.nu</title>
+
+
+    <!-- SlideShow JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+
+    <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+
+    <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/grid.css">
-    <script src="https://unpkg.com/scrollreveal"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
 </head>
 
+
+<!-- Class animate är för sidans scrolleffekten -->
 <body>
 
 
-
+    <!-- Bara för loggan och hamburgaren -->
     <header>
         <a href="index.html">
             <img src="img\125anu.png" alt="Sidans logga" id="logga">
@@ -32,6 +42,8 @@
         </div>
     </header>
 
+
+    <!-- ".drop-content" syns bara vid hover -->
     <nav>
         <ul class="links">
 
@@ -82,38 +94,37 @@
                     <a href="mc.html">Sport</a>
                 </div>
             </li>
-
         </ul>
-
-
     </nav>
 
 
+    <!-- Sektionen för den första bilden samt texten -->
     <div class="intro">
         <h1>Sveriges Största Utbud För 125</h1>
     </div>
 
+
     <h2  class="animate">Varför ska du handla hos oss?</h2>
 
 
+    <!-- Sektion för ikonbilder -->
     <div class="sales">
-
         <div class="block animate">
-            <img src="img\delivery.png" alt="" class="icon">
+            <img src="img\delivery.png" alt="Leverens ikon" class="icon">
             <p>Få din motorcykel hemleverarad samma dag!</p>
         </div>
 
         <div class="block animate">
-            <img src="img\award.png" alt="" class="icon">
+            <img src="img\award.png" alt="Pris ikon" class="icon">
             <p>Bäst kvalitet i landet samt 3 års garanti!</p>
         </div>
 
         <div class="block animate">
-            <img src="img\support.png" alt="" class="icon">
+            <img src="img\support.png" alt="Service ikon" class="icon">
             <p>Vi erbjuder gratis service i ett år efter ditt köp!</p>
         </div>
-
     </div>
+
 
     <div class="info">
         <p class="animate">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras finibus odio neque, ac
@@ -129,35 +140,33 @@
             libero pulvinar sem, ut varius erat orci et massa. </p>
     </div>
 
-    <noscript>
-        Du är sämst
-    </noscript>
-
 
     <h2 class="animate">Din resa på en motorcykel börjar hos oss!</h2>
 
+
+    <!-- Slideshow -->
     <div class="swiper animate">
-        <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
-            <!-- Slides -->
-            <div class="swiper-slide"><img src="img\1.jpg" alt="" class="slide"></div>
-            <div class="swiper-slide"><img src="img\2.jpg" alt="" class="slide"></div>
-            <div class="swiper-slide"><img src="img\3.jpg" alt="" class="slide"></div>
+            <!-- Slide-bilder -->
+            <div class="swiper-slide"><img src="img\1.jpg" alt="Motoryckel 1" class="slide"></div>
+            <div class="swiper-slide"><img src="img\2.jpg" alt="Motorcykel 2" class="slide"></div>
+            <div class="swiper-slide"><img src="img\3.jpg" alt="Motorcykel 3" class="slide"></div>
         </div>
-        <!-- If we need pagination -->
         <div class="swiper-pagination"></div>
 
-        <!-- If we need navigation buttons -->
         <div class="swiper-button-prev"></div>
         <div class="swiper-button-next"></div>
 
-        <!-- If we need scrollbar -->
         <div class="swiper-scrollbar"></div>
     </div>
 
 
-    <footer>
+    <noscript>
+        <p>Aktivera JavaScript för den bästa upplevelsen!</p>
+    </noscript>
 
+
+    <footer>
         <div class="footer-container">
             <div class="footer-links">
                 <h3>Produkter</h3>
@@ -176,15 +185,17 @@
                     <li><a href="index.html">107 70, Stockholm</a></li>
                 </ul>
             </div>
+
+            <!-- CC licens -->
             <p>License: &nbsp<a href="https://creativecommons.org/licenses/by-sa/4.0/"><u>CC-BY-SA-4.0</u></a></p>
         </div>
-
     </footer>
 
-<script src="./js/script.js"></script>
 
+<!-- JavaScript -->
+<script src="./js/script.js"></script>
+<script src="https://unpkg.com/scrollreveal"></script>
 
 
 </body>
-
 </html>

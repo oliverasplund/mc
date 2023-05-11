@@ -7,9 +7,12 @@
     color: #28282d;
 }
 
+
+/* Används för att bestämma bredden till vissa element */
 :root {
     --width: 1400px;
 }
+
 
 /* KNAPP CSS */
 .knapp {
@@ -26,13 +29,56 @@
     width: fit-content;
     margin-top: 15px;
 }
+
 .knapp:hover {
     border: 1px solid #d6d6e0;
     background: #d6d6e0;
     transition: 0.5s;
 }
 
-/* Navigering */
+
+/* Hamburgaren */
+.burger {
+    display: none;
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+    padding-right: 100px;
+    margin-top: 35px;
+}
+  
+.burger div {
+    width: 30px;
+    height: 4px;
+    background: #28282d;
+    margin: 5px;
+    transition: all 0.5s ease;
+}
+
+
+/* Hamburgarens animation */
+.burger.active .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+  
+.burger.active .line2 {
+    opacity: 0;
+}
+  
+.burger.active .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+
+/* Dropdown visas när hamburgaren trycks */
+.dropdown-content.show {
+    display: block;
+}
+
+
+/* Navigeringsmenyn*/
 .nav,
 li {
     font-weight: bold;
@@ -72,11 +118,13 @@ nav ul li .dropdown-content {
     z-index: 1;
 }
 
+
 /* Visa dropdown container med hover */
 nav ul li:hover .dropdown-content {
     display: block;
     animation: fadeInDown 0.5s ease;
 }
+
 
 /* Style för dropdown länkar */
 nav ul li .dropdown-content a {
@@ -88,6 +136,7 @@ nav ul li .dropdown-content a {
     text-align: left;
     font-size: 16px;
 }
+
 
 /* Dropdown hover effekt */
 nav ul li .dropdown-content a::after {
@@ -104,6 +153,7 @@ nav ul li .dropdown-content a:hover::after {
     width: 100%;
 }
 
+
 /* Animation for dropdown container */
 @keyframes fadeInDown {
     0% {
@@ -118,7 +168,6 @@ nav ul li .dropdown-content a:hover::after {
 }
 
 
-
 /* Logga */
 #logga {
     display: block;
@@ -128,7 +177,6 @@ nav ul li .dropdown-content a:hover::after {
     margin-left: auto;
     margin-right: auto;
 }
-
 
 .intro {
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 1)), url("../img/bakgrund.jpg");
@@ -155,7 +203,6 @@ h2 {
     font-weight: 700;
 }
 
-
 .sales {
     margin: 5%;
     gap: 10%;
@@ -177,8 +224,6 @@ h2 {
     padding-bottom: 10px;
 }
 
-
-
 .info {
     margin: 0 auto;
     margin-bottom: 100px;
@@ -191,6 +236,8 @@ h2 {
     text-align: center;
 }
 
+
+/* Style för slideshow */
 .swiper {
     width: min(calc(100% - 24px), var(--width));
     height: auto;
@@ -221,11 +268,12 @@ h2 {
     padding-right: 10px;
 }
 
+
+/* Footer style */
 .footer-container {
     height: 300px;
     background-color: #f3f3f8;
 }
-
 
 h3 {
     padding-top: 30px;
@@ -238,11 +286,9 @@ h3 {
     color: rgb(40, 40, 45, 0.8);
 }
 
-
 .footer-links ul li{
     margin: -7px 0;
 }
-
 
 .footer-container p {
     font-size: 15px;
@@ -257,43 +303,8 @@ u {
 }
 
 
-.burger {
-    display: none;
-}
+  
 
-
-.burger {
-    display: none;
-    cursor: pointer;
-    padding-right: 100px;
-    margin-top: 35px;
-  }
-  
-  .burger div {
-    width: 30px;
-    height: 4px;
-    background: #28282d;
-    margin: 5px;
-    transition: all 0.5s ease;
-  }
-  
-  /* Rotate the first and the third line when the burger menu is clicked */
-.burger.active .line1 {
-    transform: rotate(-45deg) translate(-5px, 6px);
-}
-  
-.burger.active .line2 {
-    opacity: 0;
-}
-  
-.burger.active .line3 {
-    transform: rotate(45deg) translate(-5px, -6px);
-}
-  
-  /* Show the dropdown menu when the burger menu is clicked */
-.dropdown-content.show {
-    display: block;
-}
  
 
 
@@ -306,6 +317,7 @@ u {
     margin-top: 100px;
     margin-left: 10%;
     margin-right: 10%;
+    margin-bottom: 120px;
 }
 
 .left {
@@ -446,7 +458,7 @@ u {
 }
 
 
-
+/* Animation för dropdown menyn */
 .links.active {
     animation: growDown 0.5s ease-in-out forwards;
     transform-origin: top center;
