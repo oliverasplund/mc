@@ -179,7 +179,7 @@ nav ul li .dropdown-content a:hover::after {
 }
 
 .intro {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 1)), url("../img/bakgrund.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 1)), url("../img/bakgrund.webp");
     padding: 15%;
     padding-bottom: 260px;
     margin: 5%;
